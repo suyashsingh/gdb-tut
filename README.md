@@ -18,7 +18,7 @@ file command:
 + `file executable_file`
 
 
-
+			
 ## General Commands
 `run` - runs the program normally.
 
@@ -76,6 +76,8 @@ Load the core dumps with:
 
 Now you can use the usual commands to debug the matter.
 
+> By default core dumps might not be generated in your system. So you will have to enable them manually using `ulimit -c unlimited`, refer 
+> this [stack overflow link](https://stackoverflow.com/questions/17965/how-to-generate-a-core-dump-in-linux-on-a-segmentation-fault#answer-32461658)
 
 ## Stack Trace
 Each function and its variables are assigned frames. The current function will be assigned frame 0 which is also known as the **bottom frame**.
@@ -107,5 +109,4 @@ To quit from gdb type: `quit` or just `q` and hit return.
 
 ## References
 [Linux Software Debugging with gdb](https://www.ibm.com/developerworks/library/l-gdb/index.html)
-
 
